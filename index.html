@@ -1,110 +1,300 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@import url(https://fonts.googleapis.com/css2?family=Viga&display=swap);
+*{
+    padding: 0;
+    margin: 0; 
+}
+body{
+  font-family: 'Viga', sans-serif;
+}
+.jumbotron{
+    background: grey;
+    margin-top: 80px;
+}
+.jumbotron .container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.container .image img{
+    width: 550px;
+    height: 400px;
+}
+.tombol{
+    margin-right: 55px;
+    border-radius: 30px;
+    background-color: rgb(74, 74, 204);
+    border: none;
+    transition: .5s;
+}
+.tutor .tombol1{
+    margin-right: 55px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    transition: .5s;
+}
+.tombol1{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: .5s;
+    border: none;
+    border-radius: 30px;
+}
+.tutor a{
+    margin-top: 50px;
+}
+.tombol:hover{
+    background-color: #fff;
+    color:rgb(74, 74, 204) ;
+}
+.tombol1:hover{
+    background-color: #fff;
+    color: black;
+}
+.container-reply{
+    margin: 50px 50px;   
+}
+.container-reply .row ul {
+    list-style: none;
+}
+.container-reply .row ul li a {
+    text-decoration: none;
+    color: rgb(59, 62, 245);
+    transition: .3s;
+}
+.container-reply .row ul li a:hover {
+    color: rgba(0, 0, 0, 0.822);
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/cf5896323e.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <div class="tutor">
-          <h1>1 on 1 Tutorial</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi ex commodi rem sequi ipsa, natus corrupti vitae molestias quae distinctio, voluptatibus, quia sint! Consequuntur!</p>
-          <a href="#" class="btn btn-primary btn-md tombol">Free Course</a>
-          <a href="#" class="btn btn-primary btn-md tombol1">Browse More</a>
-      </div>
-      <div class="image">
-          <img src="img/jumbo.png" alt="Jumbo">
-      </div>
-      </div>
-    </div>
-    <div class="container-reply">
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Our Process & Philosopy</h1>
-          <ul>
-            <li><i class="fas fa-check-circle"></i><a href="#">Cure More</a></li>
-            <li><i class="fas fa-check-circle"></i><a href="#">Covid-19 News</a></li>
-            <li><i class="fas fa-check-circle"></i><a href="#">Reporting About Covid</a></li>
-            <li><i class="fas fa-check-circle"></i><a href="#">Cure Secure Covid</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6">
-          <h2>I can't believe how fast my test score improved</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aliquid doloribus dolorem iste suscipit. Totam ut delectus id maxime commodi repellendus, odio ab deleniti reprehenderit! Necessitatibus voluptatum incidunt repudiandae fugiat. Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit qui neque totam aspernatur perspiciatis, nobis aut sunt libero ut accusamus maiores fuga error beatae, mollitia eligendi necessitatibus nemo sed tenetur doloremque eveniet iste maxime similique. Quam modi nisi unde impedit eos. Cum nam maxime nemo.</p>
+.container-reply .row ul li{
+    margin-top: 10px;
+}
+.container-reply .row .btn.tombol:hover{
+    background-color: rgba(0, 0, 0, 0.836);
+    color:rgb(172, 170, 170);
+}
+.today{
+    padding: 100px 50px;
+    background-color: rgba(47, 47, 214, 0.753);
+}
+.container-reply i{
+    color: blue;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+.container-reply i:hover{
+    color: rgba(0, 0, 0, 0.836);
+}
+.testi h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.testi-baca{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-self: center;
+    grid-gap: 50px;
+}
+.testi-baca figure{
+    padding: 15px;
+    box-sizing: border-box;
+}
+.testi-baca figure .image{
+    width: 100px;
+    height: 100px;
+    background-color:black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 75px;
+    margin-bottom: 20px;
+}
+.learn div{
+    text-align: center;
+    justify-items: center;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: -300px;
+}
+.learn div a{
+    margin: 0;
+}
+.learn svg{
+    background: rgba(189, 183, 183, 0.575);
+    display: block;
+}
+.icon{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background: rgb(189, 184, 184);
+    margin-top: 150px;
+}
+/* Responsive */
+/* Desktop */
+@media (min-width:996px){
+    .container-reply .row h2{
+        border-left:5px solid rgb(71, 71, 65);
+        padding-left: 13px;
+    }
+    /* .today{
+        padding: 100px 50px;
+        background-color: rgb(47, 47, 214);
+        margin-bottom: 10px;
+    } */
+    .today{
+        border-radius: 10px;
+        margin: 0 50px;
+    }
+    .today p{
+        justify-items: start;
+    }
+    .today a{
+        float: right;
+        margin-bottom: 50px;
+    }
+    figure h5{
+        margin-left:100px;
+        margin-top: 20px;
+    }
+}
+/* Tablet */
+@media (max-width:768px){
+    .jumbotron .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+    .testi-baca figure .image{
+        margin-left: 150px;
+    }
+    .container-reply .row h2{
+        border-left:5px solid rgb(71, 71, 65);
+        padding-left: 13px;
+    }
+    .tutor a{
+        margin-right: 82px;
+    }
+    .container .image img{
+        width: 350px;
+        height: 200px;
+    }
+    .tutor{
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+    .tutor h1{
+        font-size: 35px;
+    }
+    .tutor p{
+        font-size: 15px;
+    }
+    .container-reply .row h2{
+        margin-top: 50px;
+    }
+    .container-reply .row p{
+        margin-top: 25px;
+    }
+    .today a{
+        margin-bottom: -280px;
+    }
+    .today p{
+        margin-top: -19px;
+        font-size: 15px;
+    }
+    .testi-baca{
+        grid-template-columns: repeat(1,600px);
+    }
+    .testi-baca figure{
+        padding: 0 30px;
+        box-sizing: border-box;
+        margin-left: 55px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.712);
+    }
+    .testi-baca figure{
+        text-align: center;
+    }
+    .testi-baca figure .image{
+        margin-left: 190px;
+    }
+    .learn div{
+        margin-top: -140px;
+    }
+    .icon .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .icon .icon1 i, .icon .icon2 i{
+        width: 40px;
+        height: 40px;
+    }
+}
+/* Hp & Tablet */
+@media (max-width:576px){
+    .jumbotron .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
 
-          <a href="#" class="btn btn-primary btn-md tombol">View Testimonial</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="today">
-      <div class="col-lg-10">
-        <h1>Schedule a Free Consultation Today</h1>
-        <a href="#" class="btn btn-primary btn-md tombol1">Select Date & Time</a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident animi vero facere molestias in? Aspernatur corporis perferendis autem earum neque facilis expedita non cum aliquid numquam ut suscipit ipsa dolor, quas, eligendi laborum illo sapiente! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, optio doloribus. Provident veniam hic alias nemo quibusdam itaque, voluptas at!</p>
-        <!-- <a href="#" class="btn btn-primary btn-md tombol1">Select Date & Time</a> -->
-      </div>
-    </div>
-    <!-- Testi -->
-    <div class="testi">
-      <h1 class="">Testimonial</h1>
-      <div class="col-lg-10 testi-baca">
-        <figure class="figure">
-          <div class="image"><img src="img/iu2.png" class="figure-img img-fluid rounded" alt="..."></div>
-          <figcaption class="figure-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro harum cupiditate omnis, libero optio similique recusandae assumenda accusamus velit.</figcaption>
-          <h5>Auuuu</h5>
-        </figure>
-        <figure class="figure">
-          <div class="image"><img src="img/iu2.png" class="figure-img img-fluid rounded" alt="..."></div>
-          <figcaption class="figure-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro harum cupiditate omnis, libero optio similique recusandae assumenda accusamus velit.</figcaption>
-          <h5>IUuuuuu</h5>
-        </figure>
-        <figure class="figure">
-          <div class="image"><img src="img/iu2.png" class="figure-img img-fluid rounded" alt="..."></div>
-          <figcaption class="figure-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum porro harum cupiditate omnis, libero optio similique recusandae assumenda accusamus velit.</figcaption>
-          <h5>JeKaTe 48</h5>
-        </figure>
-      </div>
-    </div>
-    <!-- Akhir -->
-    <!-- Learn -->
-    <div class="learn">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,192L34.3,192C68.6,192,137,192,206,176C274.3,160,343,128,411,138.7C480,149,549,203,617,202.7C685.7,203,754,149,823,138.7C891.4,128,960,160,1029,165.3C1097.1,171,1166,149,1234,128C1302.9,107,1371,85,1406,74.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-      <div class="col-lg-6">
-        <h1>Les't Learn Together!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores accusantium a debitis reiciendis libero illum soluta reprehenderit, voluptate error, optio quia velit, et consectetur natus laudantium mollitia facere odit. Minus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="btn btn-primary btn-lg tombol">Get Started</a>
-      </div>
-    </div>
-    <!-- Icon -->
-    <div class="icon">
-      <div class="row">
-        <div class="col-md-6 icon1">
-          <i class="fas fa-mobile  fa-2x"></i>
-          <p>+62 123456789</p>
-        </div>
-        <div class="col-md-6 icon2">
-          <i class="fas fa-sms fa-2x"></i>
-          <p>info@awasdawd.com</p>
-        </div>
-      </div>
-    </div>
-    <!-- Akhir -->
-    <!-- Akhir -->
-    <footer>Create By &copy Muhammad Fajri</footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+    .container-reply .row h2{
+        border-left:5px solid rgb(71, 71, 65);
+        padding-left: 13px;
+    }
+    .tutor a{
+        margin-right: 82px;
+    }
+    .container .image img{
+        width: 350px;
+        height: 200px;
+    }
+    .tutor{
+        padding: 0 40px;
+        margin-top: 10px;
+    }
+    .tutor h1{
+        font-size: 35px;
+    }
+    .tutor p{
+        font-size: 15px;
+    }
+    .container-reply .row h2{
+        margin-top: 50px;
+    }
+    .container-reply .row p{
+        margin-top: 25px;
+    }
+    .today h1{
+        font-size: 35px;
+    }
+    .today a{
+        margin-bottom: -470px;
+    }
+    .today p{
+        font-size: 15px;
+        margin-top: -19px;
+    }
+    .testi-baca{
+        grid-template-columns: 1fr;
+    }
+    .testi-baca figure .image{
+        margin-left: 150px;
+    }
+    .testi-baca figure{
+        border-bottom: 2px solid rgba(0, 0, 0, 0.719);
+        margin-left: -5px;
+        margin-top: -15px;
+    }
+    figure h5{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .learn div{
+        margin-top: -100px;
+    }
+    .icon .row i{
+        margin: 5px 0;
+    }
+}
