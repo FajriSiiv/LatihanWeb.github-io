@@ -127,7 +127,11 @@ body{
 .icon{
     text-align: center;
 }
-
+footer{
+    text-align: center;
+    background: rgb(189, 184, 184);
+    margin-top: 150px;
+}
 /* Responsive */
 /* Desktop */
 @media (min-width:996px){
